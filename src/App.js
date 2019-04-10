@@ -19,10 +19,10 @@ class App extends Component {
           <HeaderSocial/>
           {/* <HeaderMenu/> */}
   
-          <Route path="/" exact component={HomePage} />
-          <Route path="/profile/" component={ProfilePage} />
-          <Route path="/services/" component={ServicesPage} />
-          <Route path="/contact/" component={ContactUsPage} />
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/profile" component={ProfilePage} />
+          <Route exact path="/services" component={ServicesPage} />
+          <Route exact path="/contact" component={ContactUsPage} />
         
         </div>
       </Router>
