@@ -6,12 +6,18 @@ import HomePage from "./components/HomePage/HomePage";
 import ProfilePage from "./components/ProfilePage/ProfilePage";
 import ServicesPage from "./components/ServicesPage/ServicesPage";
 import ContactUsPage from "./components/ContactUsPage/ContactUsPage";
+// Page components
+import HeaderSocial from './components/HeaderSocial';
+import HeaderMenu from './components/HeaderMenu';
 
 class App extends Component {
   render() {
     return (
       <Router>
         <div className="App">
+      
+          <HeaderSocial/>
+          {/* <HeaderMenu/> */}
   
           <Route path="/" exact component={HomePage} />
           <Route path="/profile/" component={ProfilePage} />
