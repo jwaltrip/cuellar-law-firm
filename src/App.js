@@ -8,8 +8,9 @@ import ServicesPage from "./components/ServicesPage/ServicesPage";
 import ContactUsPage from "./components/ContactUsPage/ContactUsPage";
 // Page components
 import HeaderSocial from './components/HeaderSocial/HeaderSocial';
-import HeaderMenu from './components/HeaderMenu';
+import HeaderMenu from './components/HeaderMenu/HeaderMenu';
 import Footer from './components/Footer';
+
 
 class App extends Component {
   render() {
@@ -18,7 +19,7 @@ class App extends Component {
         <div className="App">
       
           <HeaderSocial/>
-          {/* <HeaderMenu/> */}
+          <HeaderMenu/>
   
           <Route exact path="/" component={HomePage} />
           <Route exact path="/profile" component={ProfilePage} />
