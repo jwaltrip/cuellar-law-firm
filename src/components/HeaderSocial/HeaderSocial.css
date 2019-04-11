@@ -1,0 +1,64 @@
+header .header-top {
+  background: #333333;
+  color: #fff;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+header .header-top .header-slogan {
+  float: left;
+}
+
+header .header-top .header-social {
+  text-align: right;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.social-links {
+  display: inline-block;
+  vertical-align: top;
+}
+
+a {
+  transition: all .2s;
+}
+
+header .header-top .header-social a {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+header .header-top .header-social a {
+  color: #fff;
+}
+
+/* This is where you put the icon hover color */
+
+.facebook:hover {
+  background-color: #4267b2;
+
+}
+
+.linkedin:hover {
+  background-color: #0077b5;
+}
+
+.yelp:hover {
+  background-color: #d32323;
+}
+
+.email:hover {
+  background-color: #608a0c;
+}
