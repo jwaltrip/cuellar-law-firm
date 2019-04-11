@@ -8,7 +8,7 @@ class HeaderSocial extends Component {
         <header className="width-full height-60 attachment-scroll border-4 scroll-resize scroll-transparent">
       
           <div className="header-top">
-            <div className="header-slogan mr-auto ml-3">Michaela D. Cuellar Attorney at Law </div>
+            <div className="header-slogan mr-auto ml-3">{this.props.leftText}</div>
             <div className="float-right">
               <div className="header-social social-links">
             

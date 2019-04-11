@@ -18,7 +18,7 @@ class App extends Component {
       <Router>
         <div className="App">
       
-          <HeaderSocial/>
+          <HeaderSocial leftText="Michaela D. Cuellar Attorney at Law"/>
           <HeaderMenu/>
   
           <Route exact path="/" component={HomePage} />
@@ -26,6 +26,7 @@ class App extends Component {
           <Route exact path="/services" component={ServicesPage} />
           <Route exact path="/contact" component={ContactUsPage} />
           <Footer/>
+          <HeaderSocial leftText="Copy Rights Design by Z & J"/>
         </div>
       </Router>
     );

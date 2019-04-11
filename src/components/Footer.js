@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 class Footer extends Component {
   render() {
@@ -23,9 +24,9 @@ class Footer extends Component {
                                 <img className="alignnone size-medium wp-image-4801" src="https://www.michaelacuellar.com/wp-content/uploads/2014/08/whitelogo-300x95.png" alt="whitelogo" width="300" height="95"/>
                             </p>
                         
-                            <a rel="me" href="https://www.avvo.com/attorneys/78701-tx-michaela-cuellar-4590314.html?cm_mmc=Avvo-_-Avvo_Badge-_-Micro-_-4590314">
+                            <Link rel="me" to="https://www.avvo.com/attorneys/78701-tx-michaela-cuellar-4590314.html?cm_mmc=Avvo-_-Avvo_Badge-_-Micro-_-4590314">
                             <img alt="Avvo - Rate your Lawyer. Get Free Legal Advice." id="avvo_badge" src="https://www.avvo.com/assets/microbadge.png"/>
-                            </a>
+                            </Link>
                             
                         </div>
                     </div>
@@ -35,10 +36,10 @@ class Footer extends Component {
                     <div id="pages-2" className="widget widget_pages">
                         <h3 className="widget-title">Pages</h3>
                         <ul>
-                            <li className="page_item page-item-4859"><a href="https://www.michaelacuellar.com/?page_id=4859">Attorney Profile</a></li>
-                            <li className="page_item page-item-3411"><a href="https://www.michaelacuellar.com/?page_id=3411">Contact Us</a></li>
-                            <li className="page_item page-item-3426 current_page_item"><a href="https://www.michaelacuellar.com/">Home</a></li>
-                            <li className="page_item page-item-3415"><a href="https://www.michaelacuellar.com/?page_id=3415">Services Offered</a></li>
+                            <li className="page_item page-item-4859"><Link to="/profile">Attorney Profile</Link></li>
+                            <li className="page_item page-item-3411"><Link to="/contact">Contact Us</Link></li>
+                            <li className="page_item page-item-3426 current_page_item"><Link to="/home">Home</Link></li>
+                            <li className="page_item page-item-3415"><Link to="/services">Services Offered</Link></li>
                         </ul>
                     </div>
                 </div>
