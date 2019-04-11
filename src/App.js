@@ -7,7 +7,7 @@ import ProfilePage from "./components/ProfilePage/ProfilePage";
 import ServicesPage from "./components/ServicesPage/ServicesPage";
 import ContactUsPage from "./components/ContactUsPage/ContactUsPage";
 // Page components
-import HeaderSocial from './components/HeaderSocial';
+import HeaderSocial from './components/HeaderSocial/HeaderSocial';
 import HeaderMenu from './components/HeaderMenu';
 
 class App extends Component {
