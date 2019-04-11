@@ -9,6 +9,7 @@ import ContactUsPage from "./components/ContactUsPage/ContactUsPage";
 // Page components
 import HeaderSocial from './components/HeaderSocial';
 import HeaderMenu from './components/HeaderMenu';
+import Footer from './components/Footer';
 
 class App extends Component {
   render() {
@@ -23,7 +24,7 @@ class App extends Component {
           <Route exact path="/profile" component={ProfilePage} />
           <Route exact path="/services" component={ServicesPage} />
           <Route exact path="/contact" component={ContactUsPage} />
-        
+          <Footer/>
         </div>
       </Router>
     );
