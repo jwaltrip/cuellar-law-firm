@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
 // import the 4 main pages
 import HomePage from "./components/HomePage/HomePage";
@@ -9,8 +9,7 @@ import ContactUsPage from "./components/ContactUsPage/ContactUsPage";
 // Page components
 import HeaderSocial from './components/HeaderSocial/HeaderSocial';
 import HeaderMenu from './components/HeaderMenu/HeaderMenu';
-import Footer from './components/Footer';
-
+import Footer from './components/Footer/Footer';
 
 class App extends Component {
   render() {
