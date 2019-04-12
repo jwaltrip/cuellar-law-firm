@@ -6,7 +6,7 @@ class ServicesPage extends Component {
   render() {
     return (
       <div>
-        <TitleBanner title="Services Offered"/>
+        <TitleBanner color="black" title="Services Offered"/>
         <div className="container">
     <div className="section-content">
         <div>
