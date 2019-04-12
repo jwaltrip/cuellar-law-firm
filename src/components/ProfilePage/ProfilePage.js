@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
+import "./ProfilePage.css"
+import TitleBanner from '../Banners/TitleBanner';
 
 class ProfilePage extends Component {
   render() {
     return (
       <div>
-        <div className="container">
-          <h1>Profile Page</h1>
-          <hr />
-        </div>
+        <TitleBanner color="blue" title="Attorney Profile"/>
         <div className="container">
     <div className="section-content">
         <div>
@@ -24,7 +23,7 @@ class ProfilePage extends Component {
                 <div className="row">
                     <div className="col-md-12 item">
                         <div className="md-member">
-                            <div className="member-image"><img width="500" height="500" src="https://www.michaelacuellar.com/wp-content/uploads/2014/08/RTACP_7778_2296-500x500.jpg" className="attachment-md-square size-md-square wp-post-image" alt="" srcset="https://www.michaelacuellar.com/wp-content/uploads/2014/08/RTACP_7778_2296-500x500.jpg 500w, https://www.michaelacuellar.com/wp-content/uploads/2014/08/RTACP_7778_2296-150x150.jpg 150w, https://www.michaelacuellar.com/wp-content/uploads/2014/08/RTACP_7778_2296-1000x1000.jpg 1000w" sizes="(max-width: 500px) 100vw, 500px" />
+                            <div className="member-image"><img width="500" height="500" src="https://www.michaelacuellar.com/wp-content/uploads/2014/08/RTACP_7778_2296-500x500.jpg" className="member-image" alt="" srcset="https://www.michaelacuellar.com/wp-content/uploads/2014/08/RTACP_7778_2296-500x500.jpg 500w, https://www.michaelacuellar.com/wp-content/uploads/2014/08/RTACP_7778_2296-150x150.jpg 150w, https://www.michaelacuellar.com/wp-content/uploads/2014/08/RTACP_7778_2296-1000x1000.jpg 1000w" sizes="(max-width: 500px) 100vw, 500px" />
                             </div>
                             <div className="member-info"><span className="member-name">Michaela D. Cuellar</span><span className="member-role">Attorney at Law</span></div>
                             <div className="member-social">
