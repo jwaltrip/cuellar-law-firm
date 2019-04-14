@@ -110,7 +110,6 @@ class ContactUsPage extends Component {
             </div>
           </div>
         </div>
-      </div>
     );
   }
 }
