@@ -9,14 +9,14 @@ class HomePage extends Component {
           <h1>Home Page</h1>
           <hr />
         </div>
-        <div className="container">
+        
             <div className="section-content">
                 <div className="textaligncenter">
                     <h2 className="md-heading textaligncenter">ASSURING YOU GET THE JUSTICE YOU DESERVE</h2>
                 </div>
             </div>
-        </div>
-        <div className="container">
+    
+        
           <div className="section-content">
             <div>
               <h2 className="md-heading textaligncenter">Services Offered </h2>
@@ -54,8 +54,8 @@ class HomePage extends Component {
                 <div className="clearfix" style={{height: "60px"}}></div>
             </div>
         </div>
-     </div>
-     <div className="container2">
+     
+     
           <div className="section-mask" style={{backgroundColor:"rgba(44, 62, 80, 0.9)"}}></div>
           <div className="section-content">
               <div>
@@ -98,7 +98,19 @@ class HomePage extends Component {
           </div>
       </div>
       </div>
-      </div>
+      
+      
+          <div className="section-content" style={{ backgroundColor: "#7FFFD4", height: "90px", padding: "20px"}}>
+                <div>
+                    <div className="md-cta button-large">
+                        <div className="cta-content">
+                            <h2><span style={{color: "black"}}>Call To Schedule Your Consultation Today</span></h2>
+                        </div>
+                        <div className="cta-button"><a href="https://www.michaelacuellar.com/?page_id=3411" className="md-button large style-2 with-icon" _blank="" style={{borderColor:"black", color:"black",}} data-color="blue" data-color-hover="#34495e"><span class="lbl"></span><i className="lineicon-small58"></i>SCHEDULE NOW </a></div>
+                    </div>
+                </div>
+            </div>
+        
       </div>
     );
   }
