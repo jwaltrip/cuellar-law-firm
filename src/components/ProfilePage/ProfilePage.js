@@ -6,7 +6,7 @@ class ProfilePage extends Component {
   render() {
     return (
       <div>
-        <TitleBanner color="blue" title="Attorney Profile"/>
+        <TitleBanner color="#06b9dd" title="Attorney Profile"/>
         <div className="container">
     <div className="section-content">
         <div>

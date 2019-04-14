@@ -106,7 +106,7 @@ class HomePage extends Component {
                         <div className="cta-content">
                             <h2><span style={{color: "black"}}>Call To Schedule Your Consultation Today</span></h2>
                         </div>
-                        <div className="cta-button"><a href="https://www.michaelacuellar.com/?page_id=3411" className="md-button large style-2 with-icon" _blank="" style={{borderColor:"black", color:"black",}} data-color="blue" data-color-hover="#34495e"><span class="lbl"></span><i className="lineicon-small58"></i>SCHEDULE NOW </a></div>
+                        <div className="cta-button"><a href="https://www.michaelacuellar.com/?page_id=3411" className="md-button large style-2 with-icon" _blank="" style={{borderColor:"black", color:"black",}} data-color="blue" data-color-hover="#34495e"><span className="lbl"></span><i className="lineicon-small58"></i>SCHEDULE NOW </a></div>
                     </div>
                 </div>
             </div>
