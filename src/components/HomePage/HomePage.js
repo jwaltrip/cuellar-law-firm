@@ -6,7 +6,7 @@ class HomePage extends Component {
     return (
       <div>
         <div className="container">
-          <h1>Home Page</h1>
+          <h1>Home Page test</h1>
           <hr />
         </div>
         

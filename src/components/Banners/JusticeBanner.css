@@ -1,0 +1,14 @@
+/* assuring justice banner css */
+.justice-banner {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  padding: 65px 10px 35px 10px;
+}
+
+/* box shadow */
+.justice {
+  -webkit-box-shadow: inset 0px -3px 44px -24px rgba(0,0,0,0.28);
+  -moz-box-shadow: inset 0px -3px 44px -24px rgba(0,0,0,0.28);
+  box-shadow: inset 0px -3px 44px -24px rgba(0,0,0,0.28);
+}

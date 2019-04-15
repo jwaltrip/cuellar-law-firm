@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
 // import the 4 main pages
 import HomePage from "./components/HomePage/HomePage";
+import HomePage2 from "./components/HomePage/HomePage2";
 import ProfilePage from "./components/ProfilePage/ProfilePage";
 import ServicesPage from "./components/ServicesPage/ServicesPage";
 import ContactUsPage from "./components/ContactUsPage/ContactUsPage";
@@ -20,7 +21,7 @@ class App extends Component {
           <HeaderSocial leftText="Michaela D. Cuellar Attorney at Law"/>
           <HeaderMenu/>
   
-          <Route exact path="/" component={HomePage} />
+          <Route exact path="/" component={HomePage2} />
           <Route exact path="/profile" component={ProfilePage} />
           <Route exact path="/services" component={ServicesPage} />
           <Route exact path="/contact" component={ContactUsPage} />
