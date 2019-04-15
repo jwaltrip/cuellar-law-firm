@@ -1,0 +1,20 @@
+.title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+}
+
+.services-subtitle {
+  font-weight: 400;
+}
+
+.services-icon-text {
+  height: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
