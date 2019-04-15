@@ -21,7 +21,7 @@
 }
 
 /* all of the <p> tags inside class .michaela-img */
-.michaela-img > p {
+.michaela-img > h2 {
   text-shadow: 0px 0px 8px rgb(53, 53, 53);
 }
 
