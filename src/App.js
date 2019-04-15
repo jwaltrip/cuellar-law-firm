@@ -25,6 +25,7 @@ class App extends Component {
           <Route exact path="/profile" component={ProfilePage} />
           <Route exact path="/services" component={ServicesPage} />
           <Route exact path="/contact" component={ContactUsPage} />
+          
           <Footer/>
           <HeaderSocial leftText="Copy Rights Design by Z & J"/>
         </div>
