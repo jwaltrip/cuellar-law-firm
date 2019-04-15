@@ -7,6 +7,7 @@ import JusticeBanner from "../Banners/JusticeBanner";
 import BlueIcon from "../BlueIcon/BlueIcon";
 import ServicesOffered from "../Banners/ServicesOffered";
 import WhyChooseBanner from "../Banners/WhyChooseBanner";
+import ApptBanner from "../Banners/ApptBanner";
 
 
 class HomePage2 extends React.Component {
@@ -19,6 +20,7 @@ class HomePage2 extends React.Component {
         {/* Services Offerred Section */}
         <ServicesOffered />
         <WhyChooseBanner />
+        <ApptBanner />
       </div>
     );
   }
