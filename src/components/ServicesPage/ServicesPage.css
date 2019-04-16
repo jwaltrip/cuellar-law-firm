@@ -14,14 +14,14 @@
     text-align: center;
 }
 blockquote.style-3 {
-    padding: 20px 20px 20px 80px;
+    /*padding: 20px 20px 20px 80px;*/
     background: rgba(0, 0, 0, 0.05);
     border: none;
     position: relative;
 }
 h3 {
     color: #222;
-    font-family: Source Sans Pro;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;
@@ -30,9 +30,9 @@ strong {
     font-weight: 600;
 }
 blockquote {
-    padding: 10px 20px;
-    margin: 0 0 20px;
-    font-size: 17.5px;
+    padding: 30px;
+    margin: 20px auto 20px auto;
+    font-size: 18px;
     border-left: 5px solid #eee;
 }
 .page-section.shadow-inside-top-bottom {
@@ -50,4 +50,50 @@ blockquote {
 }
 iframe {
     width: 100%;
+}
+
+.services-container {
+  margin: 50px auto;
+}
+
+.service-section {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+}
+
+.icon-container {
+
+}
+
+.service-title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.service-list {
+  text-align: left;
+  margin-left: 15px;
+}
+
+.service-list > ul {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  width: 300px;
+}
+
+.quote {
+  display: flex;
+  flex-direction: row;
+  color: #bbbbbb;
+}
+
+.quote-title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 38px;
 }
