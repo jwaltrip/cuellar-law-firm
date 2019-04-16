@@ -77,7 +77,7 @@ class ProfilePage extends Component {
               {/* Profile Description */}
               {/*<h3 className="profile-bio-header mt-3">About Me</h3>*/}
               
-              <p className="profile-desc" style={{ textAlign: "center" }}>
+              <p className="profile-desc mb-3">
                 Michaela D. Cuellar is a 2008 Magna Cum Laude graduate of Texas
                 State University receiving her Bachelors of Science in Criminal
                 Justice and a Minor in Forensic Psychology. In the fall of 2010
@@ -85,14 +85,18 @@ class ProfilePage extends Component {
                 School of Law. Throughout her law school career, Michaela
                 excelled in her classes, received several CALI Awards for
                 distinguished achievements and was on the Dean’s list every
-                semester. Michaela graduated in the top third of her class Cum
-                Laude in 2013. She is licensed to practice law by the State Bar
-                of Texas. Michaela has been in private practice since 2013 and
+                semester.
+              </p>
+              <p className="profile-desc mb-3">
+                Michaela has been in private practice since 2013 and
                 offers legal service in Criminal law, Personal Injury and Family
                 Law. Michaela is a young and aggressive attorney who represents
                 each one of her clients with the greatest degree of commitment
                 and dedication, while striking to achieve the best possible
-                outcome. Professional Associations and Memberships: American Bar
+                outcome.
+              </p>
+              <p className="profile-desc mb-5">
+                Professional Associations and Memberships: American Bar
                 Association Texas Young Lawyers Association Bar Admissions Texas
                 Bar 2013. Member of the Austin Criminal Defense Lawyers
                 Association since 2015.

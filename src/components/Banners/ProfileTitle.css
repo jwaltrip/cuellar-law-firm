@@ -21,10 +21,10 @@
 .profile-title-text {
   display: block;
   position: relative;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 900;
-  font-size: 48pt;
-  letter-spacing: 7px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 42pt;
+  letter-spacing: 5px;
   color: white;
   opacity: 0.9;
   background-color: transparent;
