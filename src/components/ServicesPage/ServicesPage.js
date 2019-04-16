@@ -116,6 +116,8 @@ class ServicesPage extends Component {
             </div>
           </div>
         </div>
+        
+        {/* Google maps */}
         <Gmaps />
       </div>
     );
