@@ -1,0 +1,32 @@
+.profile-title-container {
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* adds a tint over the bg img */
+.profile-title-container:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0, 0.6);
+}
+
+.profile-title-text {
+  display: block;
+  position: relative;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+  font-size: 48pt;
+  letter-spacing: 7px;
+  color: white;
+  opacity: 0.9;
+  background-color: transparent;
+  z-index: 100 !important;
+}
