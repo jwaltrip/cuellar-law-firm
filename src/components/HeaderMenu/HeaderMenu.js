@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./HeaderMenu.css";
 import { NavLink as Link } from "react-router-dom";
 import {
   Collapse,
@@ -28,7 +29,7 @@ class HeaderMenu extends Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
+        <Navbar color="light" light expand="lg">
           {/* This is the logo */}
           <NavbarBrand tag={Link} to="/">
             <img src="https://www.michaelacuellar.com/wp-content/uploads/2014/08/newlogo.png" alt="Michaela D. Cuellar - Attorney at Law" />
@@ -36,20 +37,57 @@ class HeaderMenu extends Component {
           {/* Navbar toggle button when on mobile */}
           <NavbarToggler onClick={this.toggleNavbar} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink className="menu-link" tag={Link} to="/">Home</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink className="menu-link" tag={Link} to="/profile">Attorney Profile</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink className="menu-link" tag={Link} to="/services">Services Offered</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink className="menu-link" tag={Link} to="/contact">Contact Us</NavLink>
-              </NavItem>
-            </Nav>
+            <div className="ml-auto">
+              <div className="header-container">
+                {/* Home link */}
+                <div className="header-link-container">
+                  <div className="header-link-text">
+                    <Link className="menu-link" to="/">Home</Link>
+                  </div>
+                  <div className="header-link-underline">{' '}</div>
+                </div>
+    
+                {/* Attorney Profile link */}
+                <div className="header-link-container">
+                  <div className="header-link-text">
+                    <Link className="menu-link" to="/profile">Attorney Profile</Link>
+                  </div>
+                  <div className="header-link-underline">{' '}</div>
+                </div>
+  
+                {/* Services Offered link */}
+                <div className="header-link-container">
+                  <div className="header-link-text">
+                    <Link className="menu-link" to="/services">Services Offered</Link>
+                  </div>
+                  <div className="header-link-underline">{' '}</div>
+                </div>
+  
+                {/* Contact link */}
+                <div className="header-link-container">
+                  <div className="header-link-text">
+                    <Link className="menu-link" to="/contact">Contact Us</Link>
+                  </div>
+                  <div className="header-link-underline">{' '}</div>
+                </div>
+                
+              </div>
+            </div>
+            
+            {/*<Nav className="ml-auto" navbar>*/}
+              {/*<NavItem>*/}
+                {/*<NavLink className="menu-link" tag={Link} to="/">Home</NavLink>*/}
+              {/*</NavItem>*/}
+              {/*<NavItem>*/}
+                {/*<NavLink className="menu-link" tag={Link} to="/profile">Attorney Profile</NavLink>*/}
+              {/*</NavItem>*/}
+              {/*<NavItem>*/}
+                {/*<NavLink className="menu-link" tag={Link} to="/services">Services Offered</NavLink>*/}
+              {/*</NavItem>*/}
+              {/*<NavItem>*/}
+                {/*<NavLink className="menu-link" tag={Link} to="/contact">Contact Us</NavLink>*/}
+              {/*</NavItem>*/}
+            {/*</Nav>*/}
           </Collapse>
         </Navbar>
       </div>

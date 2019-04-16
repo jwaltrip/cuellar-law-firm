@@ -1,5 +1,49 @@
 .menu-link {
-  font-family: Source Sans Pro, sans-serif;
-  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
+  /*transition: color 0.2s ease-in-out;*/
+}
+
+.menu-link.active,
+.menu-link:hover {
+  color: #06b9dd;
+  text-underline: none;
+  text-decoration: none;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-container > div {
+  margin: auto 7px auto 7px;
+}
+
+.header-link-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-link-text:hover {
+  cursor: pointer;
+  text-underline: none;
+  /*transition: all 200ms ease-in-out;*/
+}
+
+.header-link-underline {
+  width: 0;
+  transition: width 0.1s ease-in-out;
+}
+
+.header-link-text:hover + .header-link-underline {
+  height: 1px;
+  max-height: 1px;
+  width: 30px;
+  border-bottom: 1px solid #06b9dd;
 }

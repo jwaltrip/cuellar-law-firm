@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 // import the 4 main pages
 import HomePage from "./components/HomePage/HomePage";
@@ -20,11 +20,13 @@ class App extends Component {
       
           <HeaderSocial leftText="Michaela D. Cuellar Attorney at Law"/>
           <HeaderMenu/>
-  
-          <Route exact path="/" component={HomePage2} />
-          <Route exact path="/profile" component={ProfilePage} />
-          <Route exact path="/services" component={ServicesPage} />
-          <Route exact path="/contact" component={ContactUsPage} />
+          
+          <Switch>
+            <Route exact path="/" component={HomePage2} />
+            <Route exact path="/profile" component={ProfilePage} />
+            <Route exact path="/services" component={ServicesPage} />
+            <Route exact path="/contact" component={ContactUsPage} />
+          </Switch>
           
           <Footer/>
           <HeaderSocial leftText="Copy Rights Design by Z & J"/>
