@@ -5,10 +5,7 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink
+  NavbarBrand
 } from 'reactstrap';
 
 class HeaderMenu extends Component {
@@ -42,7 +39,7 @@ class HeaderMenu extends Component {
                 {/* Home link */}
                 <div className="header-link-container">
                   <div className="header-link-text">
-                    <Link className="menu-link" to="/">Home</Link>
+                    <Link className="menu-link" exact to="/">Home</Link>
                   </div>
                   <div className="header-link-underline">{' '}</div>
                 </div>
@@ -50,7 +47,7 @@ class HeaderMenu extends Component {
                 {/* Attorney Profile link */}
                 <div className="header-link-container">
                   <div className="header-link-text">
-                    <Link className="menu-link" to="/profile">Attorney Profile</Link>
+                    <Link className="menu-link" exact to="/profile">Attorney Profile</Link>
                   </div>
                   <div className="header-link-underline">{' '}</div>
                 </div>
@@ -58,7 +55,7 @@ class HeaderMenu extends Component {
                 {/* Services Offered link */}
                 <div className="header-link-container">
                   <div className="header-link-text">
-                    <Link className="menu-link" to="/services">Services Offered</Link>
+                    <Link className="menu-link" exact to="/services">Services Offered</Link>
                   </div>
                   <div className="header-link-underline">{' '}</div>
                 </div>
@@ -66,28 +63,13 @@ class HeaderMenu extends Component {
                 {/* Contact link */}
                 <div className="header-link-container">
                   <div className="header-link-text">
-                    <Link className="menu-link" to="/contact">Contact Us</Link>
+                    <Link className="menu-link" exact to="/contact">Contact Us</Link>
                   </div>
                   <div className="header-link-underline">{' '}</div>
                 </div>
                 
               </div>
             </div>
-            
-            {/*<Nav className="ml-auto" navbar>*/}
-              {/*<NavItem>*/}
-                {/*<NavLink className="menu-link" tag={Link} to="/">Home</NavLink>*/}
-              {/*</NavItem>*/}
-              {/*<NavItem>*/}
-                {/*<NavLink className="menu-link" tag={Link} to="/profile">Attorney Profile</NavLink>*/}
-              {/*</NavItem>*/}
-              {/*<NavItem>*/}
-                {/*<NavLink className="menu-link" tag={Link} to="/services">Services Offered</NavLink>*/}
-              {/*</NavItem>*/}
-              {/*<NavItem>*/}
-                {/*<NavLink className="menu-link" tag={Link} to="/contact">Contact Us</NavLink>*/}
-              {/*</NavItem>*/}
-            {/*</Nav>*/}
           </Collapse>
         </Navbar>
       </div>
