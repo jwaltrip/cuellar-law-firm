@@ -25,7 +25,7 @@ class HomePage2 extends React.Component {
         <Mobile>
           <MichaelaBannerMobile />
         </Mobile>
-        <JusticeBanner />
+        {/*<JusticeBanner />*/}
         {/* Services Offerred Section */}
         <ServicesOffered />
         <WhyChooseBanner />

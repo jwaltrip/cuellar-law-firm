@@ -20,20 +20,28 @@ const ServicesOffered = (props) => {
       <Default>
         <div className="container">
           <div className="row mt-5">
-            <div className="col-md-4 mb-3">
+            <div className="col-md-3 mb-3">
               <div className="d-flex flex-row justify-content-center">
-                <BlueIcon iconClass="fas fa-user fa-2x"/>
-                <div className="services-icon-text">Personal Injury</div>
+                <BlueIcon iconClass="fas fa-home fa-2x"/>
+                <div className="services-icon-text">24hr Jail Release</div>
               </div>
-
             </div>
-            <div className="col-md-4 mb-3">
+  
+            <div className="col-md-3 mb-3">
               <div className="d-flex flex-row justify-content-center">
                 <BlueIcon iconClass="fas fa-gavel fa-2x"/>
                 <div className="services-icon-text">Criminal</div>
               </div>
             </div>
-            <div className="col-md-4 mb-3">
+            
+            <div className="col-md-3 mb-3">
+              <div className="d-flex flex-row justify-content-center">
+                <BlueIcon iconClass="fas fa-user fa-2x"/>
+                <div className="services-icon-text">Personal Injury</div>
+              </div>
+            </div>
+            
+            <div className="col-md-3 mb-3">
               <div className="d-flex flex-row justify-content-center">
                 <BlueIcon iconClass="fas fa-user-friends fa-2x"/>
                 <div className="services-icon-text">Family</div>
@@ -46,24 +54,34 @@ const ServicesOffered = (props) => {
       <Mobile>
         <div className="container pl-4">
           <div className="row mt-5">
-            <div className="col-md-4 mb-3">
+            <div className="col-md-3 mb-3">
               <div className="d-flex flex-row justify-content-start">
-                <BlueIcon iconClass="fas fa-user fa-2x"/>
-                <div className="services-icon-text">Personal Injury</div>
+                <BlueIcon iconClass="fas fa-home fa-2x"/>
+                <div className="services-icon-text">24hr Jail Release</div>
               </div>
             </div>
-            <div className="col-md-4 mb-3">
+  
+            <div className="col-md-3 mb-3">
               <div className="d-flex flex-row justify-content-start">
                 <BlueIcon iconClass="fas fa-gavel fa-2x"/>
                 <div className="services-icon-text">Criminal</div>
               </div>
             </div>
-            <div className="col-md-4 mb-3">
+            
+            <div className="col-md-3 mb-3">
+              <div className="d-flex flex-row justify-content-start">
+                <BlueIcon iconClass="fas fa-user fa-2x"/>
+                <div className="services-icon-text">Personal Injury</div>
+              </div>
+            </div>
+            
+            <div className="col-md-3 mb-3">
               <div className="d-flex flex-row justify-content-start">
                 <BlueIcon iconClass="fas fa-user-friends fa-2x"/>
                 <div className="services-icon-text">Family</div>
               </div>
             </div>
+            
           </div>
         </div>
       </Mobile>
