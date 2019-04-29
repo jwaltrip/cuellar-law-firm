@@ -5,7 +5,7 @@ import FitText from "react-fittext";
 
 
 const bannerStyle = {
-  backgroundImage: `url("${ServicesBgImg}")`,
+  backgroundImage: "black",
   backgroundPosition: "center center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",

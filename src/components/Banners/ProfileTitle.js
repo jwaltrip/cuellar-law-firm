@@ -4,7 +4,7 @@ import ProfileBgImg from "../../assets/profile-bg1.jpg";
 import FitText from "react-fittext";
 
 const bannerStyle = {
-  backgroundImage: `url("${ProfileBgImg}")`,
+  backgroundColor: "#007bff",
   backgroundPosition: "center center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",

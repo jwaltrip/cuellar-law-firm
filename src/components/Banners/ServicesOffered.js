@@ -25,6 +25,7 @@ const ServicesOffered = (props) => {
                 <BlueIcon iconClass="fas fa-user fa-2x"/>
                 <div className="services-icon-text">Personal Injury</div>
               </div>
+
             </div>
             <div className="col-md-4 mb-3">
               <div className="d-flex flex-row justify-content-center">
