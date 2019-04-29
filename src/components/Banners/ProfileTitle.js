@@ -3,7 +3,7 @@ import "./ProfileTitle.css";
 import ProfileBgImg from "../../assets/profile-bg1.jpg";
 
 const bannerStyle = {
-  backgroundImage: `url("${ProfileBgImg}")`,
+  backgroundColor: "#007bff",
   backgroundPosition: "center center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
