@@ -9,6 +9,7 @@ import ServicesOffered from "../Banners/ServicesOffered";
 import WhyChooseBanner from "../Banners/WhyChooseBanner";
 import ApptBanner from "../Banners/ApptBanner";
 import Responsive from 'react-responsive';
+import MichaelaBannerMobile from "../Banners/MichaelaBannerMobile";
 
 const Mobile = props => <Responsive {...props} maxWidth={767} />;
 const Default = props => <Responsive {...props} minWidth={768} />;
@@ -19,11 +20,11 @@ class HomePage2 extends React.Component {
       <div>
         {/* banner image of Michaela */}
         <Default>
-        <MichaelaBanner />
+          <MichaelaBanner />
         </Default>
-        {/* <Mobile>
-
-        </Mobile> */}
+        <Mobile>
+          <MichaelaBannerMobile />
+        </Mobile>
         <JusticeBanner />
         {/* Services Offerred Section */}
         <ServicesOffered />

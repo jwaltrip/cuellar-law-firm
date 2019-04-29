@@ -7,8 +7,12 @@ import FitText from "react-fittext";
 const styles = {
   imgBanner: {
     backgroundImage: `url(${MichaelaImg})`,
-    backgroundPosition: "center 55%",
-    maxHeight: 600,
+    backgroundPosition: "center center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundAttachment: "scroll",
+    width: "100%",
+    height: 600,
   }
 };
 
