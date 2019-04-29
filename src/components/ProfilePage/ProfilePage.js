@@ -27,7 +27,7 @@ class ProfilePage extends Component {
                           width="500"
                           height="500"
                           src="https://www.michaelacuellar.com/wp-content/uploads/2014/08/RTACP_7778_2296-500x500.jpg"
-                          className="member-image"
+                          className="member-image img-fluid"
                           alt=""
                           srcSet="https://www.michaelacuellar.com/wp-content/uploads/2014/08/RTACP_7778_2296-500x500.jpg 500w, https://www.michaelacuellar.com/wp-content/uploads/2014/08/RTACP_7778_2296-150x150.jpg 150w, https://www.michaelacuellar.com/wp-content/uploads/2014/08/RTACP_7778_2296-1000x1000.jpg 1000w"
                           sizes="(max-width: 500px) 100vw, 500px"
