@@ -3,7 +3,7 @@ import "./ServicesTitle.css";
 import ServicesBgImg from "../../assets/services-bg3.jpg";
 
 const bannerStyle = {
-  backgroundImage: `url("${ServicesBgImg}")`,
+  backgroundImage: "black",
   backgroundPosition: "center center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
