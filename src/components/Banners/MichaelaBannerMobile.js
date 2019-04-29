@@ -1,5 +1,5 @@
 import React from 'react';
-import "./MichaelaBanner.css";
+import "./MichaelaBannerMobile.css";
 import MichaelaImg from "../../assets/MikaelaCuellar.jpg";
 import FitText from "react-fittext";
 
@@ -7,27 +7,33 @@ import FitText from "react-fittext";
 const styles = {
   imgBanner: {
     backgroundImage: `url(${MichaelaImg})`,
-    backgroundPosition: "center 55%",
-    maxHeight: 600,
+    backgroundPosition: "center center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundAttachment: "scroll",
+    width: "100%",
+    height: 600,
   }
 };
 
 const MichaelaBannerMobile = (props) => {
   return (
-    <div>
+    <div className="mobile-homepage-banner">
       {/* banner image of Michaela */}
-      <div className="michaela-img" style={styles.imgBanner}>
-        <div className="container">
-          <FitText compressor={1} minFontSize={20} maxFontSize={34}>
-            <h2 className="img-top-text">Se Habla Español</h2>
-          </FitText>
-          <FitText compressor={1.5} minFontSize={20} maxFontSize={34}>
-            <h2 className="img-middle-text">PHONES ANSWERED 24 HOURS A DAY</h2>
-          </FitText>
-          <FitText compressor={1.5} minFontSize={20} maxFontSize={34}>
-            <h2 className="img-bottom-text">CONTACT OFFICES TODAY (512)-765-6341</h2>
-          </FitText>
-        </div>
+      <div className="michaela-img" style={styles.imgBanner}>{' '}</div>
+      <div className="container mobile-text py-3">
+        <FitText compressor={1.5} minFontSize={20} maxFontSize={24}>
+          <h2 className="mobile-text-1">PHONES ANSWERED 24 HOURS A DAY</h2>
+        </FitText>
+        <FitText compressor={1.5} minFontSize={20} maxFontSize={24}>
+          <h2 className="mobile-text-2">CONTACT OFFICES TODAY</h2>
+        </FitText>
+        <FitText compressor={1.5} minFontSize={20} maxFontSize={24}>
+          <h2 className="mobile-text-3">(512)-765-6341</h2>
+        </FitText>
+        <FitText compressor={2} minFontSize={16} maxFontSize={22}>
+          <h2 className="mobile-text-4">Se Habla Español</h2>
+        </FitText>
       </div>
     </div>
   );
