@@ -1,10 +1,10 @@
 import React from 'react';
 import "./ProfileTitle.css";
-import ProfileBgImg from "../../assets/profile-bg1.jpg";
+// import ProfileBgImg from "../../assets/profile-bg1.jpg";
 import FitText from "react-fittext";
 
 const bannerStyle = {
-  backgroundColor: "#007bff",
+  backgroundColor: "#06b9dd",
   backgroundPosition: "center center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
