@@ -193,11 +193,13 @@ class ServicesPage extends Component {
                       {/* quote icon */}
                       <i className="fas fa-quote-right fa-3x"></i>
                       <h3 style={{ color: "#000000", textAlign: "center", marginLeft: "30px" }}>
+                      
                         <strong>
                           ASSURING YOU GET THE JUSTICE YOU DESERVE FROM A
                           KNOWLEDGEABLE ATTORNEY AT A REASONABLE COST
                         </strong>
                       </h3>
+                      <i className="fas fa-quote-right fa-3x ml-4"></i>
                     </blockquote>
                   </div>
                 </div>
