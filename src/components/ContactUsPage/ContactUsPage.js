@@ -105,6 +105,8 @@ class ContactUsPage extends Component {
                 <br/>
                 <strong>Phone:</strong> &nbsp; (512)-765-6341
                 <br/>
+                <strong>Fax:</strong> &nbsp; (512)-597-0727
+                <br/>
                 <strong>Email:</strong> &nbsp; <a href="mailto:michaeladcuellar@gmail.com">MichaeladCuellar@gmail.com</a>
               </p>
             </div>

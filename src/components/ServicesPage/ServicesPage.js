@@ -17,6 +17,54 @@ class ServicesPage extends Component {
           <div className="row">
             {/* left half */}
             <div className="col-lg-6">
+              {/* Jail Release */}
+              <div className="service-section">
+                <div className="icon-container">
+                  <BlueIcon iconClass="fas fa-gavel fa-2x" />
+                </div>
+                <div className="service-list">
+                  <h3 className="service-title">Jail Release</h3>
+                  <ul>
+                    <li><em>Phones are answered 24 hours a day</em></li>
+                  </ul>
+                </div>
+              </div>
+    
+              {/* Family section */}
+              <div className="service-section">
+                <div className="icon-container">
+                  <BlueIcon iconClass="fas fa-user-friends fa-2x" />
+                </div>
+                <div className="service-list">
+                  <h3 className="service-title">Family</h3>
+                  <ul>
+                    <li><em>Divorce</em></li>
+                    <li><em>Modifications</em></li>
+                    <li><em>Protective Orders</em></li>
+                    <li><em>Child Custody / Visitation</em></li>
+                    <li><em>Child Support / Spousal Maintenance</em></li>
+                  </ul>
+                </div>
+              </div>
+    
+              {/* Personal injury section */}
+              <div className="service-section">
+                <div className="icon-container">
+                  <BlueIcon iconClass="fas fa-ambulance fa-2x" />
+                </div>
+                <div className="service-list">
+                  <h3 className="service-title">Personal Injury</h3>
+                  <ul>
+                    <li><em>Dog Bites</em></li>
+                    <li><em>Auto Accidents</em></li>
+                  </ul>
+                </div>
+              </div>
+  
+            </div>
+
+            {/* right half */}
+            <div className="col-lg-6">
               {/* Criminal section */}
               <div className="service-section">
                 <div className="icon-container">
@@ -41,55 +89,7 @@ class ServicesPage extends Component {
                   </ul>
                 </div>
               </div>
-              
-            </div>
-
-            {/* right half */}
-            <div className="col-lg-6">
-              {/* Family section */}
-              <div className="service-section">
-                <div className="icon-container">
-                  <BlueIcon iconClass="fas fa-user-friends fa-2x" />
-                </div>
-                <div className="service-list">
-                  <h3 className="service-title">Family</h3>
-                  <ul>
-                    <li><em>Divorce</em></li>
-                    <li><em>Modifications</em></li>
-                    <li><em>Protective Orders</em></li>
-                    <li><em>Child Custody / Visitation</em></li>
-                    <li><em>Child Support / Spousal Maintenance</em></li>
-                  </ul>
-                </div>
-              </div>
-              
-              {/* Personal injury section */}
-              <div className="service-section">
-                <div className="icon-container">
-                  <BlueIcon iconClass="fas fa-ambulance fa-2x" />
-                </div>
-                <div className="service-list">
-                  <h3 className="service-title">Personal Injury</h3>
-                  <ul>
-                    <li><em>Dog Bites</em></li>
-                    <li><em>Auto Accidents</em></li>
-                  </ul>
-                </div>
-              </div>
-              
-              {/* Jail Release */}
-              <div className="service-section">
-                <div className="icon-container">
-                  <BlueIcon iconClass="fas fa-gavel fa-2x" />
-                </div>
-                <div className="service-list">
-                  <h3 className="service-title">Jail Release</h3>
-                  <ul>
-                    <li><em>Phones are answered 24 hours a day</em></li>
-                  </ul>
-                </div>
-              </div>
-              
+  
             </div>
           </div>
           
