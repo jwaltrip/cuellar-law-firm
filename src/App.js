@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 // import the 4 main pages
-import HomePage from "./components/HomePage/HomePage";
+// import HomePage from "./components/HomePage/HomePage";
 import HomePage2 from "./components/HomePage/HomePage2";
 import ProfilePage from "./components/ProfilePage/ProfilePage";
 import ServicesPage from "./components/ServicesPage/ServicesPage";
@@ -26,6 +26,7 @@ class App extends Component {
             <Route exact path="/profile" component={ProfilePage} />
             <Route exact path="/services" component={ServicesPage} />
             <Route exact path="/contact" component={ContactUsPage} />
+            {/* TODO add page not found route */}
           </Switch>
           
           <Footer/>

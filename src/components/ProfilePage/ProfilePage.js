@@ -49,6 +49,7 @@ class ProfilePage extends Component {
                           href="https://www.facebook.com/pages/The-Law-Office-of-Michaela-D-Cuellar/199276020262438 "
                           title="facebook"
                           target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <i className="fab fa-facebook-f fa-2x" />
                         </a>
@@ -57,6 +58,7 @@ class ProfilePage extends Component {
                           href="http://www.linkedin.com/pub/michaela-cuellar/9b/ba0/76"
                           title="linkedin"
                           target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <i className="fab fa-linkedin-in fa-2x" />
                         </a>
@@ -65,6 +67,7 @@ class ProfilePage extends Component {
                           href="http://www.yelp.com/biz/the-law-office-of-michaela-d-cuellar-austin-2"
                           title="yelp"
                           target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <i className="fab fa-yelp fa-2x" />
                         </a>

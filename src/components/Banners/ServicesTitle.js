@@ -1,6 +1,6 @@
 import React from 'react';
 import "./ServicesTitle.css";
-import ServicesBgImg from "../../assets/services-bg3.jpg";
+// import ServicesBgImg from "../../assets/services-bg3.jpg";
 import FitText from "react-fittext";
 
 

@@ -46,7 +46,7 @@ const WhyChooseBanner = (props) => {
               
             </div>
             <div className="col-md-6 d-none d-md-inline">
-              <img src={GavelImg} className="img-fliud" />
+              <img src={GavelImg} className="img-fliud" alt="gavel" />
             </div>
           </div>
         </div>
