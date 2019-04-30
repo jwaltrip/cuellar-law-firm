@@ -191,7 +191,7 @@ class ServicesPage extends Component {
                     <h2 className="md-heading textaligncenter quote-title">OUR MISSION</h2>
                     <blockquote className="style-3 quote">
                       {/* quote icon */}
-                      <i className="fas fa-quote-right fa-3x"></i>
+                      
                       <h3 style={{ color: "#000000", textAlign: "center", marginLeft: "30px" }}>
                       
                         <strong>
@@ -199,7 +199,7 @@ class ServicesPage extends Component {
                           KNOWLEDGEABLE ATTORNEY AT A REASONABLE COST"
                         </strong>
                       </h3>
-                      <i className="fas fa-quote-right fa-3x pl-4"></i>
+                      
                     </blockquote>
                   </div>
                 </div>
