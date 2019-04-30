@@ -23,13 +23,15 @@ const MichaelaBannerMobile = (props) => {
       <div className="michaela-img" style={styles.imgBanner}>{' '}</div>
       <div className="container mobile-text py-3">
         <FitText compressor={1.5} minFontSize={20} maxFontSize={24}>
-          <h2 className="mobile-text-1">JAIL RELEASE</h2>
+          <h2 className="mobile-text-1">Jail Release</h2>
         </FitText>
         <FitText compressor={1.5} minFontSize={20} maxFontSize={24}>
-          <h2 className="mobile-text-1">PHONES ANSWERED 24 HOURS A DAY</h2>
+          <h2 className="mobile-text-1">Phones Answered 24 hours a Day</h2>
         </FitText>
         <FitText compressor={1.5} minFontSize={20} maxFontSize={24}>
-          <h2 className="mobile-text-2">CONTACT OUR OFFICE NOW</h2>
+
+          <h2 className="mobile-text-2">Contact Our Office Today</h2>
+
         </FitText>
         <FitText compressor={1.5} minFontSize={20} maxFontSize={24}>
           <h2 className="mobile-text-3">(512)-765-6341</h2>

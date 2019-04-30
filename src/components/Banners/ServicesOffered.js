@@ -30,7 +30,7 @@ const ServicesOffered = (props) => {
             <div className="col-md-3 mb-3">
               <div className="d-flex flex-row justify-content-center">
                 <BlueIcon iconClass="fas fa-gavel fa-2x"/>
-                <div className="services-icon-text">Criminal</div>
+                <div className="services-icon-text">Criminal Defense</div>
               </div>
             </div>
             
@@ -64,7 +64,7 @@ const ServicesOffered = (props) => {
             <div className="col-md-3 mb-3">
               <div className="d-flex flex-row justify-content-start">
                 <BlueIcon iconClass="fas fa-gavel fa-2x"/>
-                <div className="services-icon-text">Criminal</div>
+                <div className="services-icon-text">Criminal Defense</div>
               </div>
             </div>
             

@@ -4,7 +4,6 @@ import { NavLink as Link } from "react-router-dom";
 import {
   Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand
 } from 'reactstrap';
 
@@ -12,16 +11,16 @@ class HeaderMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false
+      isOpen: true
     };
   }
   
-  toggleNavbar = (e) => {
-    // prevent default click event to stop browser from refreshing
-    e.preventDefault();
-    // set state of isOpen to the opposite of current value
-    this.setState({ isOpen: !this.state.isOpen });
-  };
+  // toggleNavbar = (e) => {
+  //   // prevent default click event to stop browser from refreshing
+  //   e.preventDefault();
+  //   // set state of isOpen to the opposite of current value
+  //   this.setState({ isOpen: !this.state.isOpen });
+  // };
   
   render() {
     return (
@@ -32,7 +31,7 @@ class HeaderMenu extends Component {
             <img src="https://www.michaelacuellar.com/wp-content/uploads/2014/08/newlogo.png" alt="Michaela D. Cuellar - Attorney at Law" />
           </NavbarBrand>
           {/* Navbar toggle button when on mobile */}
-          <NavbarToggler onClick={this.toggleNavbar} />
+          {/*<NavbarToggler onClick={this.toggleNavbar} />*/}
           <Collapse isOpen={this.state.isOpen} navbar>
             <div className="ml-auto">
               <div className="header-container">
