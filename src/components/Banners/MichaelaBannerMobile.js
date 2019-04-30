@@ -29,7 +29,7 @@ const MichaelaBannerMobile = (props) => {
           <h2 className="mobile-text-1">PHONES ANSWERED 24 HOURS A DAY</h2>
         </FitText>
         <FitText compressor={1.5} minFontSize={20} maxFontSize={24}>
-          <h2 className="mobile-text-2">CONTACT OUR OFFICE TODAY</h2>
+          <h2 className="mobile-text-2">CONTACT OUR OFFICE NOW</h2>
         </FitText>
         <FitText compressor={1.5} minFontSize={20} maxFontSize={24}>
           <h2 className="mobile-text-3">(512)-765-6341</h2>

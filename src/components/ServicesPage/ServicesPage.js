@@ -28,7 +28,7 @@ class ServicesPage extends Component {
                   <BlueIcon iconClass="fas fa-gavel fa-2x" />
                 </div>
                 <div className="service-list">
-                  <h3 className="service-title">Jail Release</h3>
+                  <h3 className="service-title">Jail release</h3>
                   <ul>
                     <li><em>Phones are answered 24 hours a day</em></li>
                   </ul>
@@ -195,11 +195,11 @@ class ServicesPage extends Component {
                       <h3 style={{ color: "#000000", textAlign: "center", marginLeft: "30px" }}>
                       
                         <strong>
-                          ASSURING YOU GET THE JUSTICE YOU DESERVE FROM A
-                          KNOWLEDGEABLE ATTORNEY AT A REASONABLE COST
+                          "ASSURING YOU GET THE JUSTICE YOU DESERVE FROM A
+                          KNOWLEDGEABLE ATTORNEY AT A REASONABLE COST"
                         </strong>
                       </h3>
-                      <i className="fas fa-quote-right fa-3x ml-4"></i>
+                      <i className="fas fa-quote-right fa-3x pl-4"></i>
                     </blockquote>
                   </div>
                 </div>

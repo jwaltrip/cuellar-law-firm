@@ -23,7 +23,7 @@ const ServicesOffered = (props) => {
             <div className="col-md-3 mb-3">
               <div className="d-flex flex-row justify-content-center">
                 <BlueIcon iconClass="fas fa-home fa-2x"/>
-                <div className="services-icon-text">24hr Jail Release</div>
+                <div className="services-icon-text">Jail Release</div>
               </div>
             </div>
   
@@ -57,7 +57,7 @@ const ServicesOffered = (props) => {
             <div className="col-md-3 mb-3">
               <div className="d-flex flex-row justify-content-start">
                 <BlueIcon iconClass="fas fa-home fa-2x"/>
-                <div className="services-icon-text">24hr Jail Release</div>
+                <div className="services-icon-text">Jail Release</div>
               </div>
             </div>
   
