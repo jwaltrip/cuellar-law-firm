@@ -21,7 +21,7 @@ const WhyChooseBanner = (props) => {
               <div className="d-flex flex-row justify-content-end mb-4">
                 <div className="quick-response option1">
                   Quick Response
-                  <div className="subtext">Jail Release Phones are answered 24 hours a day.</div>
+                  <div className="subtext">Jail release phones answered 24 hours a day.</div>
                 </div>
                 <i className="fas fa-mobile-alt fa-2x icon icon-mobile"></i>
               </div>
@@ -39,7 +39,7 @@ const WhyChooseBanner = (props) => {
               <div className="d-flex flex-row justify-content-end mb-4">
                 <div className="quick-response option3">
                   Bilingual
-                  <div className="subtext">Se Habla Español.</div>
+                  <div className="subtext">Se habla español.</div>
                 </div>
                 <i className="fas fa-cog fa-2x icon icon-gear"></i>
               </div>

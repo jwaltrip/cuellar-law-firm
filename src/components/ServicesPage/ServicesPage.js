@@ -31,7 +31,7 @@ class ServicesPage extends Component {
                     <h3 className="service-title">Jail Release</h3>
                     <ul>
                       <li>
-                        <em>Phones are answered 24 hours a day</em>
+                        <em>Phones answered 24 hours a day</em>
                       </li>
                     </ul>
                   </div>
@@ -151,7 +151,7 @@ class ServicesPage extends Component {
                     <h3 className="service-title">Jail Release</h3>
                     <ul>
                       <li>
-                        <em>Phones are answered 24 hours a day</em>
+                        <em>Phones answered 24 hours a day</em>
                       </li>
                     </ul>
                   </div>

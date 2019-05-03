@@ -78,7 +78,7 @@ class HomePage extends Component {
                                         <div className="md-icon style-normal"><i className="entypo-mobile" style={{color:"#ffffff;"}}></i></div>
                                         <div className="box-text">
                                             <h4 style={{textAlign: "right"}}><span style={{color: "#ffffff"}}>Quick&nbsp;Response&nbsp;</span></h4>
-                                            <p style={{textAlign: "right"}}><span style={{color: "#ffffff"}}>Jail Release Phones are answered 24 hours a day.</span></p>
+                                            <p style={{textAlign: "right"}}><span style={{color: "#ffffff"}}>Jail release phones are answered 24 hours a day.</span></p>
                                         </div>
                                     </div>
                                     <div className="clearfix"></div>
@@ -96,7 +96,7 @@ class HomePage extends Component {
                                         <div className="md-icon style-normal"><i className="lineicon-settings3" style={{color: "#ffffff"}}></i></div>
                                         <div className="box-text">
                                             <h4 style={{textAlign: "right"}}><span style={{color: "#ffffff"}}>Bilingual</span></h4>
-                                            <p style={{textAlign: "right"}}><span style={{color: "#ffffff"}}>Se Habla Español.</span></p>
+                                            <p style={{textAlign: "right"}}><span style={{color: "#ffffff"}}>Se habla español.</span></p>
                                         </div>
                                     </div>
                                     <div className="clearfix"></div>
