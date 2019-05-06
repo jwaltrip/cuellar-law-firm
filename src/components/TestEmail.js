@@ -5,17 +5,21 @@ const TestEmail = props => {
   return (
     <div className="email-container">
       <div className="email-header">
+        <div className="email-title">
+          <h3>New contact form submission!</h3>
+          <hr />
+        </div>
+        
         <div className="email-subject">
           <span className="subject-header">Subject: </span>
           Test sending email from postman
         </div>
         <div className="email-date">
-          <span className="date-recieved">recieved: </span>
+          <span className="date-recieved">recieved </span>
           May 5, 2019 @ 9:29 PM
         </div>
       </div>
-
-      <br />
+      
       <table className="tg">
         <tr>
           <th className="tg-adxo">Name:</th>
@@ -26,7 +30,6 @@ const TestEmail = props => {
           <td className="tg-0lax">jake.waltrip.dev@gmail.com</td>
         </tr>
       </table>
-      <br />
 
       <div className="message-info">
         <div className="message-header">Message:</div>
