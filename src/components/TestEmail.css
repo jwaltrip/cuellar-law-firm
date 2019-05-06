@@ -1,0 +1,61 @@
+.email-container {
+  margin: 50px 0 50px 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #111111;
+}
+
+/* Bold Lable styles */
+.subject-header,
+.name-header,
+.contact-email-header,
+.message-header {
+  font-weight: bold;
+}
+
+/* Date recieved */
+.email-date {
+  font-size: 0.85rem;
+  color: #3e3e3e;
+  opacity: 0.9;
+  margin-top: 5px;
+}
+
+.date-recieved {
+  opacity: 0.85;
+}
+
+/* Name + Email table style */
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.tg td {
+  padding: 0 5px 0 0;
+  border-style: none;
+  overflow: hidden;
+  word-break: normal;
+}
+.tg th {
+  font-weight: normal;
+  padding: 0 5px 0 0;
+  border-style: none;
+  overflow: hidden;
+  word-break: normal;
+}
+.tg .tg-adxo {
+  font-weight: bold;
+  text-align: left;
+  vertical-align: middle;
+}
+.tg .tg-0lax {
+  text-align: left;
+  vertical-align: middle;
+}
+.tg .tg-l2oz {
+  font-weight: bold;
+  text-align: left;
+  vertical-align: middle;
+}

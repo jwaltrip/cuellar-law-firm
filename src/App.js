@@ -7,6 +7,7 @@ import HomePage2 from "./components/HomePage/HomePage2";
 import ProfilePage from "./components/ProfilePage/ProfilePage";
 import ServicesPage from "./components/ServicesPage/ServicesPage";
 import ContactUsPage from "./components/ContactUsPage/ContactUsPage";
+import TestEmail from "./components/TestEmail";
 // Page components
 import HeaderSocial from './components/HeaderSocial/HeaderSocial';
 import HeaderMenu from './components/HeaderMenu/HeaderMenu';
@@ -26,6 +27,7 @@ class App extends Component {
             <Route exact path="/profile" component={ProfilePage} />
             <Route exact path="/services" component={ServicesPage} />
             <Route exact path="/contact" component={ContactUsPage} />
+            <Route exact path="/test" component={TestEmail} />
             {/* TODO add page not found route */}
           </Switch>
           
