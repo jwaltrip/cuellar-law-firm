@@ -1,20 +1,29 @@
 {
   "name": "cuellar-law-firm",
   "version": 2,
+  "env": {
+    "PORT": "5000",
+    "TEST_EMAIL": true,
+    "CUELLAR_CONTACT_EMAIL_USER": "@cuellar-gmail-user",
+    "CUELLAR_CONTACT_EMAIL_PASS": "@cuellar-gmail-pass",
+    "CUELLAR_EMAIL": "contactpage.cuellarlaw@gmail.com"
+  },
   "builds": [
+    { "src": "server.js", "use": "@now/node-server" },
     {
       "src": "package.json",
       "use": "@now/static-build",
       "config": { "distDir": "build" }
-    }
+    }s
   ],
   "routes": [
+    { "src": "/api/.*", "dest": "server.js" },
     {
       "src": "/static/(.*)",
       "headers": { "cache-control": "s-maxage=31536000,immutable" },
       "dest": "/static/$1"
     },
-    { "src": "/favicon.ico", "dest": "/favicon.ico" },
+    { "src": "/Favicon.png", "dest": "/Favicon.png" },
     { "src": "/asset-manifest.json", "dest": "/asset-manifest.json" },
     { "src": "/manifest.json", "dest": "/manifest.json" },
     { "src": "/precache-manifest.(.*)", "dest": "/precache-manifest.$1" },
