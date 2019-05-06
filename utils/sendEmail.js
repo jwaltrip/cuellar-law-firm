@@ -9,8 +9,8 @@ exports.sendEmail = function (recipient, name, subject, message) {
     const locals = {
       name: name,
       date: moment().format("MMM D, YYYY @ LT"), // formats the current date like "May 5, 2019 @ 9:30pm"
-      subject: subject,
-      message: message,
+      subject: subject || "",
+      message: message || "",
       email: recipient
     };
     
