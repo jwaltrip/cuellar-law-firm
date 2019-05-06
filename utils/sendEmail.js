@@ -37,12 +37,12 @@ exports.sendEmail = function (recipient, name, subject, message) {
         
         // if the TEST_EMAIL env var is set to true, add "TEST MAIL" to the subject
         const fromEmail = (process.env.TEST_EMAIL)
-                          ? `"Cuellar Law - TEST MAIL" <${process.env.CUELLAR_EMAIL}>`
-                          : `"Cuellar Law" <${process.env.CUELLAR_EMAIL}>`;
+                          ? `"Cuellar Law - TEST MAIL" <contactpage.cuellarlaw@gmail.com>`
+                          : `"Cuellar Law" <contactpage.cuellarlaw@gmail.com>`;
         
         let mailOptions = {
           from: fromEmail,
-          to: recipient, // Recepient email address. Multiple emails can send separated by commas
+          to: process.env.CUELLAR_EMAIL, // Recepient email address. Multiple emails can send separated by commas
           replyTo: recipient,
           subject: subject,
           html: html,
