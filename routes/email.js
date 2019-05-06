@@ -20,7 +20,7 @@ router.post('/email/send', (req, res, next) => {
       // log the result of sending the email and email details
       console.log(result);
       // return the email info as json
-      return res.json({ result });
+      return res.json({ result, success: true });
     })
     .catch(console.error);
 });

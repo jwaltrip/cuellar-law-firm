@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import axios from "axios";
+import { Alert } from "reactstrap";
 import Gmaps from "../Gmaps/Gmaps";
 import "./ContactPage.css";
 
@@ -9,7 +11,10 @@ class ContactUsPage extends Component {
       name: '',
       email: '',
       subject: '',
-      message: ''
+      message: '',
+      alertBanner: '',
+      showBanner: false,
+      error: null
     };
   }
   
@@ -20,17 +25,74 @@ class ContactUsPage extends Component {
   };
   
   // TODO add send email template and integrate email provider
+  // TODO add basic email validation
   handleSubmit = (e) => {
     e.preventDefault();
-    // TODO add basic email validation
+    
+    let { name, email, subject, message } = this.state;
+    // trim leading and trailing whitespace
+    name = name.trim();
+    email = email.trim();
+    subject = subject.trim();
+    message = message.trim();
+    
+    if (name || email) {
+      axios.post('/api/email/send', { name, email, subject, message })
+        .then(res => {
+          console.log(res);
+          
+          if (res.data.result.success || res.data.success) {
+            this.setState({
+              name: '',
+              email: '',
+              subject: '',
+              message: '',
+              alertBanner: 'Message successfully sent!',
+              showBanner: true,
+              error: null,
+            });
+          }
+        })
+        .catch((error) => {
+          console.error(error);
+          this.setState({
+            error: error,
+            alertBanner: 'An error occurred. Please contact us by phone or email.'
+          });
+        });
+    } else {
+      // else, some form fields were missing
+      this.setState({
+        showBanner: true,
+        alertBanner: 'You must provide both Email and Name fields',
+        error: true
+      })
+    }
+  };
+  
+  toggleBanner = () => {
+    this.setState({ showBanner: !this.state.showBanner });
   };
   
   render() {
+    // logic to determine wheter banner should be green or red (success or fail)
+    let bannerColor;
+    if (this.state.error) {
+      bannerColor = "danger";
+    } else {
+      bannerColor = "success";
+    }
+    
     return (
       <div>
         <Gmaps />
         
         <div className="container contact-form">
+          <div className="row ml-1">
+            <Alert color={bannerColor} isOpen={this.state.showBanner} toggle={this.toggleBanner}>
+              {this.state.alertBanner}
+            </Alert>
+          </div>
           <div className="row">
             {/* Left side contact form */}
             <div className="col-md-6 mb-4">
