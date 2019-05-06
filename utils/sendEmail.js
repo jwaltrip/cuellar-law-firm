@@ -36,9 +36,9 @@ exports.sendEmail = function (recipient, name, subject, message) {
         });
         
         // if the TEST_EMAIL env var is set to true, add "TEST MAIL" to the subject
-        const fromEmail = (process.env.TEST_EMAIL) ?
-                          `"Cuellar Law - TEST MAIL" <${process.env.CUELLAR_EMAIL}>` :
-                          `"Cuellar Law" <${process.env.CUELLAR_EMAIL}>`;
+        const fromEmail = (process.env.TEST_EMAIL)
+                          ? `"Cuellar Law - TEST MAIL" <${process.env.CUELLAR_EMAIL}>`
+                          : `"Cuellar Law" <${process.env.CUELLAR_EMAIL}>`;
         
         let mailOptions = {
           from: fromEmail,

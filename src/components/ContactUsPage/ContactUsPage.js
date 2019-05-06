@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from "axios";
 import Gmaps from "../Gmaps/Gmaps";
 import "./ContactPage.css";
 
@@ -9,7 +10,9 @@ class ContactUsPage extends Component {
       name: '',
       email: '',
       subject: '',
-      message: ''
+      message: '',
+      alertBanner: '',
+      error: null
     };
   }
   
@@ -20,9 +23,35 @@ class ContactUsPage extends Component {
   };
   
   // TODO add send email template and integrate email provider
+  // TODO add basic email validation
   handleSubmit = (e) => {
     e.preventDefault();
-    // TODO add basic email validation
+    
+    let { name, email, subject, message } = this.state;
+    // trim leading and trailing whitespace
+    name = name.trim();
+    email = email.trim();
+    subject = subject.trim();
+    message = message.trim();
+    
+    if (name || email || subject || message) {
+      axios.post('/api/email/send', { name, email, subject, message })
+        .then(res => {
+          console.log(res);
+          this.setState({
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+            errors: null,
+          });
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    } else {
+      // else, some form fields were missing
+    }
   };
   
   render() {
@@ -34,7 +63,7 @@ class ContactUsPage extends Component {
           <div className="row">
             {/* Left side contact form */}
             <div className="col-md-6 mb-4">
-              <form>
+              <form onSubmit={this.handleSubmit}>
                 <div className="form-group">
                   <label className="contact-label" htmlFor="name">YOUR NAME (REQUIRED)</label>
                   <input
