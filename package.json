@@ -29,7 +29,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "now-build": "react-scripts build",
-    "deploy": "now --public"
+    "deploy": "now --public",
+    "heroku-postbuild": "yarn install --only=dev && yarn install && yarn run build"
   },
   "eslintConfig": {
     "extends": "react-app"

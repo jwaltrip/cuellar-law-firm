@@ -15,6 +15,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 // app.use(cookieParser());
 // app.use(express.static(path.join(__dirname, 'public')));
+// setup express to serve the static index.html built by react
+app.use(express.static(path.join(__dirname, "build")));
 
 // setup routes
 app.use("/api", emailRoute);
@@ -49,9 +51,6 @@ app.use("/api", emailRoute);
 //     error: {}
 //   });
 // });
-
-// setup express to serve the static index.html built by react
-app.use(express.static(path.join(__dirname, "build")));
 
 // set the backend server port
 const port = process.env.PORT || 5000;

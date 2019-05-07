@@ -3,7 +3,7 @@
   "version": 2,
   "env": {
     "PORT": "5000",
-    "TEST_EMAIL": true,
+    "TEST_EMAIL": "true",
     "CUELLAR_CONTACT_EMAIL_USER": "@cuellar-gmail-user",
     "CUELLAR_CONTACT_EMAIL_PASS": "@cuellar-gmail-pass",
     "CUELLAR_EMAIL": "contactpage.cuellarlaw@gmail.com"
@@ -14,10 +14,10 @@
       "src": "package.json",
       "use": "@now/static-build",
       "config": { "distDir": "build" }
-    }s
+    }
   ],
   "routes": [
-    { "src": "/api/.*", "dest": "server.js" },
+    { "src": "/api/email/send", "dest": "server.js" },
     {
       "src": "/static/(.*)",
       "headers": { "cache-control": "s-maxage=31536000,immutable" },
