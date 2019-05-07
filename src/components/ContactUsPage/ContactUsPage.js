@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from "axios";
 import { Alert } from "reactstrap";
+import isEmail from 'validator/lib/isEmail';
+import isEmpty from "../../utils/isEmpty";
 import Gmaps from "../Gmaps/Gmaps";
 import "./ContactPage.css";
 
@@ -18,14 +20,16 @@ class ContactUsPage extends Component {
     };
   }
   
+  // a single function to update all the text fields on the contact page
+  // NOTE: you must add a "name" attribute to the input fields and name it the same
+  // as the variable names in the state
   handleInputChange = (e) => {
     e.preventDefault();
     
     this.setState({ [e.target.name]: e.target.value });
   };
   
-  // TODO add send email template and integrate email provider
-  // TODO add basic email validation
+  // submit function for the contact page
   handleSubmit = (e) => {
     e.preventDefault();
     
@@ -35,12 +39,56 @@ class ContactUsPage extends Component {
     email = email.trim();
     subject = subject.trim();
     message = message.trim();
-    
-    if (name || email) {
+  
+    // check to see if both EMAIL and NAME fields are empty
+    // if so, show error banner and dont sent email
+    if (isEmpty(name) || isEmpty(email)) {
+      if (isEmpty(name) && isEmpty(email)) {
+        this.setState({
+          error: true,
+          alertBanner: 'Error: you must enter your Name and Email Address',
+          showBanner: true,
+        });
+        return;
+      }
+      // check to see if NAME field is empty
+      // if so, show error banner and dont sent email
+      if (isEmpty(name)) {
+        this.setState({
+          error: true,
+          alertBanner: 'Error: you must enter your Name',
+          showBanner: true,
+        });
+        return;
+      }
+      // check to see if EMAIL field is empty
+      // if so, show error banner and dont sent email
+      if (isEmpty(email)) {
+        this.setState({
+          error: true,
+          alertBanner: 'Error: you must enter your Email',
+          showBanner: true,
+        });
+        return;
+      }
+    }
+    // else if, email is not proper format
+    // check to see if email entered is correct email format
+    // if not, show error message and don't sent email
+    else if (!isEmail(email)) {
+      this.setState({
+        error: true,
+        alertBanner: 'Error: email must be in valid email format',
+        showBanner: true,
+      });
+      return;
+    }
+    // else, we have all data needed to send email properly
+    else {
       axios.post('/api/email/send', { name, email, subject, message })
         .then(res => {
           console.log(res);
-          
+      
           if (res.data.result.success || res.data.success) {
             this.setState({
               name: '',
@@ -57,21 +105,19 @@ class ContactUsPage extends Component {
           console.error(error);
           this.setState({
             error: error,
-            alertBanner: 'An error occurred. Please contact us by phone or email.'
+            showBanner: true,
+            alertBanner: 'An error occurred. Please contact us by phone or email',
           });
         });
-    } else {
-      // else, some form fields were missing
-      this.setState({
-        showBanner: true,
-        alertBanner: 'You must provide both Email and Name fields',
-        error: true
-      })
     }
   };
   
+  // toggles the show/hide of the alert banner
   toggleBanner = () => {
-    this.setState({ showBanner: !this.state.showBanner });
+    this.setState({
+      showBanner: !this.state.showBanner,
+      alertBanner: '',
+    });
   };
   
   render() {
@@ -87,12 +133,17 @@ class ContactUsPage extends Component {
       <div>
         <Gmaps />
         
+        {/* Alert banner */}
         <div className="container contact-form">
-          <div className="row ml-1">
-            <Alert color={bannerColor} isOpen={this.state.showBanner} toggle={this.toggleBanner}>
-              {this.state.alertBanner}
-            </Alert>
+          <div className="row">
+            <div className="col-12 w-100">
+              <Alert color={bannerColor} isOpen={this.state.showBanner} toggle={this.toggleBanner}>
+                {this.state.alertBanner}
+              </Alert>
+            </div>
           </div>
+          
+          {/* Contact Form */}
           <div className="row">
             {/* Left side contact form */}
             <div className="col-md-6 mb-4">
