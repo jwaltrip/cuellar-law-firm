@@ -2,7 +2,6 @@
   "name": "cuellar-law-firm",
   "version": 2,
   "env": {
-    "PORT": "5000",
     "TEST_EMAIL": "true",
     "CUELLAR_CONTACT_EMAIL_USER": "@cuellar-gmail-user",
     "CUELLAR_CONTACT_EMAIL_PASS": "@cuellar-gmail-pass",
@@ -18,6 +17,7 @@
   ],
   "routes": [
     { "src": "/api/email/send", "dest": "server.js" },
+    { "src": "/emails/(.*)", "dest": "/emails/$1" },
     {
       "src": "/static/(.*)",
       "headers": { "cache-control": "s-maxage=31536000,immutable" },
