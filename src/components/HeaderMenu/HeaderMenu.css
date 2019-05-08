@@ -30,20 +30,21 @@
   align-items: center;
 }
 
-.header-link-text:hover {
-  cursor: pointer;
-  text-underline: none;
-  /*transition: all 200ms ease-in-out;*/
-}
+/*.header-link-text:hover {*/
+  /*cursor: pointer;*/
+  /*text-underline: none;*/
+  /*!*transition: all 200ms ease-in-out;*!*/
+/*}*/
 
 .header-link-underline {
   width: 0;
-  transition: width 0.1s ease-in-out;
+  height: 1px;
+  transition: all 0.1s ease-in-out;
 }
 
-.header-link-text:hover + .header-link-underline {
+.menu-link:hover + .header-link-underline {
   height: 1px;
   max-height: 1px;
-  width: 30px;
+  width: 55%;
   border-bottom: 1px solid #06b9dd;
 }
