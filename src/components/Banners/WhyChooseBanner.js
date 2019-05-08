@@ -10,9 +10,11 @@ const WhyChooseBanner = (props) => {
         {/* Title */}
         <div className="container">
           <div className="row mt-5">
-            <FitText compression={3.7} minFontSize={25} maxFontSize={35}>
-              <h2 className="why-title">Why choose Michaela D. Cuellar</h2>
-            </FitText>
+            <div className="col-12">
+              <FitText compression={3.7} minFontSize={25} maxFontSize={35}>
+                <h2 className="why-title">Why choose Michaela D. Cuellar</h2>
+              </FitText>
+            </div>
           </div>
           
           <div className="row pb-5">
