@@ -3,8 +3,9 @@
 }
 
 .member-image   {
-  border-radius: 50%
-
+  border-radius: 50%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .page-section.shadow-inside-top-bottom {

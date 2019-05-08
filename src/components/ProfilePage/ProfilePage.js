@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./ProfilePage.css";
 // import TitleBanner from "../Banners/TitleBanner";
 import ProfileTitle from "../Banners/ProfileTitle";
+import ProfileImg from "../../assets/michaela-profile.jpg";
 
 class ProfilePage extends Component {
   render() {
@@ -24,13 +25,9 @@ class ProfilePage extends Component {
                     <div className="md-member">
                       <div className="member-image mb-4">
                         <img
-                          width="500"
-                          height="500"
-                          src="https://www.michaelacuellar.com/wp-content/uploads/2014/08/RTACP_7778_2296-500x500.jpg"
+                          src={ProfileImg}
                           className="member-image img-fluid"
-                          alt=""
-                          srcSet="https://www.michaelacuellar.com/wp-content/uploads/2014/08/RTACP_7778_2296-500x500.jpg 500w, https://www.michaelacuellar.com/wp-content/uploads/2014/08/RTACP_7778_2296-150x150.jpg 150w, https://www.michaelacuellar.com/wp-content/uploads/2014/08/RTACP_7778_2296-1000x1000.jpg 1000w"
-                          sizes="(max-width: 500px) 100vw, 500px"
+                          alt="Michaela D. Cuellar"
                         />
                       </div>
                       

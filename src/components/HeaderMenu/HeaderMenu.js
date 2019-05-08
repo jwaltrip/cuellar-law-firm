@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./HeaderMenu.css";
+import LogoImg from "../../assets/newlogo.png";
 import { NavLink as Link } from "react-router-dom";
 import {
   Collapse,
@@ -28,7 +29,7 @@ class HeaderMenu extends Component {
         <Navbar color="light" light expand="lg">
           {/* This is the logo */}
           <NavbarBrand tag={Link} to="/">
-            <img src="https://www.michaelacuellar.com/wp-content/uploads/2014/08/newlogo.png" alt="Michaela D. Cuellar - Attorney at Law" />
+            <img src={LogoImg} alt="Michaela D. Cuellar - Attorney at Law" />
           </NavbarBrand>
           {/* Navbar toggle button when on mobile */}
           {/*<NavbarToggler onClick={this.toggleNavbar} />*/}
