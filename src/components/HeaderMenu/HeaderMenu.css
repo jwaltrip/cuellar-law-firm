@@ -48,3 +48,9 @@
   width: 55%;
   border-bottom: 1px solid #06b9dd;
 }
+
+@media (max-width: 767px) {
+  .header-link-text {
+    font-size: 0.8em;
+  }
+}
