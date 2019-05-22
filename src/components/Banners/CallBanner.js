@@ -8,7 +8,7 @@ class CallBanner extends React.Component {
   
   render() {
     return (
-      <div className="schedule-banner">
+      <div className="schedule-banner2">
         <div className="container">
           <div className="row">
             <div className="col-lg-9">
