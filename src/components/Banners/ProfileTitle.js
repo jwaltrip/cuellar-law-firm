@@ -3,7 +3,7 @@ import "./ProfileTitle.css";
 // import ProfileBgImg from "../../assets/profile-bg1.jpg";
 import FitText from "react-fittext";
 
-// #06b9dd
+// blue color = #06b9dd
 
 const ProfileTitle = (props) => {
   const bannerStyle = {

@@ -10,7 +10,7 @@ class JailReleasePage extends Component {
     return (
       <div>
         {/*<TitleBanner color="#06b9dd" title="Attorney Profile" />*/}
-        <ProfileTitle color="black" title="Jail Release"/>
+        <ProfileTitle color="#06b9dd" title="Jail Release"/>
 
         <div className="container">
           <div className="section-content">

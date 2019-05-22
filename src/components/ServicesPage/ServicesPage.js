@@ -4,7 +4,8 @@ import "./ServicesPage.css";
 import Gmaps from "../Gmaps/Gmaps";
 import BlueIcon from "../BlueIcon/BlueIcon";
 import Responsive from "react-responsive";
-import ServicesTitle from "../Banners/ServicesTitle";
+// import ServicesTitle from "../Banners/ServicesTitle";
+import ProfileTitle from "../Banners/ProfileTitle";
 // import FitText from "react-fittext";
 
 const Mobile = props => <Responsive {...props} maxWidth={767} />;
@@ -15,7 +16,7 @@ class ServicesPage extends Component {
     return (
       <div>
         {/*<TitleBanner color="black" title="Services Offered" />*/}
-        <ServicesTitle />
+        <ProfileTitle color="#06b9dd" title="Services Offered"/>
 
         <div className="container services-container">
           <Default>
