@@ -16,13 +16,6 @@ class HeaderMenu extends Component {
     };
   }
   
-  // toggleNavbar = (e) => {
-  //   // prevent default click event to stop browser from refreshing
-  //   e.preventDefault();
-  //   // set state of isOpen to the opposite of current value
-  //   this.setState({ isOpen: !this.state.isOpen });
-  // };
-  
   render() {
     return (
       <div>
@@ -31,24 +24,23 @@ class HeaderMenu extends Component {
           <NavbarBrand tag={Link} to="/">
             <img src={LogoImg} alt="Michaela D. Cuellar - Attorney at Law" />
           </NavbarBrand>
-          {/* Navbar toggle button when on mobile */}
-          {/*<NavbarToggler onClick={this.toggleNavbar} />*/}
+          {/* this is the part of the header the collapses on mobile */}
           <Collapse isOpen={this.state.isOpen} navbar>
             <div className="ml-auto">
               <div className="header-container">
                 {/* Home link */}
                 <div className="header-link-container">
-                  <div className="header-link-text">
-                    <Link className="menu-link" exact to="/">Home</Link>
-                  </div>
+                  <Link className="menu-link" exact to="/">
+                    <div className="header-link-text">Home</div>
+                  </Link>
                   <div className="header-link-underline">{' '}</div>
                 </div>
     
                 {/* Attorney Profile link */}
                 <div className="header-link-container">
-                  <div className="header-link-text">
-                    <Link className="menu-link" exact to="/profile">Attorney Profile</Link>
-                  </div>
+                  <Link className="menu-link" exact to="/profile">
+                    <div className="header-link-text">Attorney Profile</div>
+                  </Link>
                   <div className="header-link-underline">{' '}</div>
                 </div>
 
@@ -62,17 +54,17 @@ class HeaderMenu extends Component {
   
                 {/* Services Offered link */}
                 <div className="header-link-container">
-                  <div className="header-link-text">
-                    <Link className="menu-link" exact to="/services">Services Offered</Link>
-                  </div>
+                  <Link className="menu-link" exact to="/services">
+                    <div className="header-link-text">Services Offered</div>
+                  </Link>
                   <div className="header-link-underline">{' '}</div>
                 </div>
   
                 {/* Contact link */}
                 <div className="header-link-container">
-                  <div className="header-link-text">
-                    <Link className="menu-link" exact to="/contact">Contact Us</Link>
-                  </div>
+                  <Link className="menu-link" exact to="/contact">
+                    <div className="header-link-text">Contact Us</div>
+                  </Link>
                   <div className="header-link-underline">{' '}</div>
                 </div>
                 
