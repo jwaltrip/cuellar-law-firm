@@ -94,6 +94,11 @@
   color: white;
 }
 
+.release-link,
+.release-link:hover {
+  color: white;
+}
+
 .mobile-text-4 {
   font-family: "Source Sans Pro", sans-serif !important;
   font-weight: 400 !important;
