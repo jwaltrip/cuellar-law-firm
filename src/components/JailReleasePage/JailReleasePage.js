@@ -41,16 +41,16 @@ class JailReleasePage extends Component {
               {/* Profile Description */}
               {/*<h3 className="profile-bio-header mt-3">About Me</h3>*/}
               
-              <p className="profile-desc mb-3">
+              <p className="profile-desc2 mb-3">
               Why should you choose an attorney over a bondsman? 
               We’re affordable, convenient, and will see the case through representation. 
               The goal is to make this a hassle-free process. You supply the information; the office will provide all the work. There are no co-signers required, which means you are not liable should the person not fulfill the conditions of his/her bond. Simply pay a one-time fee for the jail release.
 
               </p>
-              <p className="profile-desc mb-3">
+              <p className="profile-desc2 mb-3">
               We do not require collateral for the remainder of the bond amount. Do not wait! Unlike a bail bondsman, an attorney can waive magistration, allowing for a quicker processing time from jail. Retaining a jail release attorney gets your friend/loved one out of jail, as well as, begins the process of working on his/her defense. 
               </p>
-              <p className="profile-desc mb-5">
+              <p className="profile-desc2 mb-5">
               It is very important to retain an attorney as soon as possible to avoid unnecessary delays. I will work aggressively with the promise to work efficiently and as quickly as possible on the release of your friend or loved one. 
 
               </p>
