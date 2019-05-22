@@ -5,6 +5,7 @@ import './App.css';
 // import HomePage from "./components/HomePage/HomePage";
 import HomePage2 from "./components/HomePage/HomePage2";
 import ProfilePage from "./components/ProfilePage/ProfilePage";
+import JailReleasePage from "./components/JailReleasePage/JailReleasePage.js"
 import ServicesPage from "./components/ServicesPage/ServicesPage";
 import ContactUsPage from "./components/ContactUsPage/ContactUsPage";
 // Page components
@@ -24,6 +25,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={HomePage2} />
             <Route exact path="/profile" component={ProfilePage} />
+            <Route exact path="/jailrelease" component={JailReleasePage} />
             <Route exact path="/services" component={ServicesPage} />
             <Route exact path="/contact" component={ContactUsPage} />
             {/* TODO add page not found route */}

@@ -34,7 +34,7 @@ const MichaelaBannerMobile = (props) => {
 
         </FitText>
         <FitText compressor={1.5} minFontSize={20} maxFontSize={24}>
-          <h2 className="mobile-text-3">(512)-765-6341</h2>
+          <h2 className="mobile-text-3"><a href="tel:(512)-765-6341" className="mobile-tel-link">(512)-765-6341</a></h2>
         </FitText>
         <FitText compressor={2} minFontSize={16} maxFontSize={22}>
           <h2 className="mobile-text-4">Se Habla Español</h2>

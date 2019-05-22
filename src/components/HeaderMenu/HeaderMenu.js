@@ -51,6 +51,14 @@ class HeaderMenu extends Component {
                   </div>
                   <div className="header-link-underline">{' '}</div>
                 </div>
+
+                {/* Attorney Profile link */}
+                <div className="header-link-container">
+                  <div className="header-link-text">
+                    <Link className="menu-link" exact to="/jailrelease">Jail Release</Link>
+                  </div>
+                  <div className="header-link-underline">{' '}</div>
+                </div>
   
                 {/* Services Offered link */}
                 <div className="header-link-container">

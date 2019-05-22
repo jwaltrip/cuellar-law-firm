@@ -9,6 +9,17 @@
   font-weight: 400;
 }
 
+.services-icon-text-link {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #212529;
+}
+
+.services-icon-text-link:hover {
+  color: #212529;
+}
+
 .services-icon-text {
   height: 85px;
   display: flex;

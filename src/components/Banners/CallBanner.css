@@ -1,0 +1,31 @@
+.schedule-banner {
+    padding-top: 40px;
+    padding-bottom: 25px;
+    /*background-color: #1abc9c;*/
+    background-color:black !important;
+    font-weight: bold;
+  }
+  
+  .call-btn {
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: red;
+    border-color: red;
+    margin-top: 25px;
+  }
+  
+  .call-btn:hover {
+    border-color: white;
+    background-color:green;
+    text-decoration: none;
+    color:white;
+  }
+  
+  .schedule-text {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    color: white;
+  }

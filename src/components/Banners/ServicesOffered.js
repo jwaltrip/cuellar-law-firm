@@ -3,6 +3,7 @@ import FitText from "react-fittext";
 import BlueIcon from "../BlueIcon/BlueIcon";
 import "./ServicesOffered.css";
 import Responsive from 'react-responsive';
+import {Link} from "react-router-dom";
 
 const Mobile = props => <Responsive {...props} maxWidth={767} />;
 const Default = props => <Responsive {...props} minWidth={768} />;
@@ -23,7 +24,7 @@ const ServicesOffered = (props) => {
             <div className="col-md-3 mb-3">
               <div className="d-flex flex-row justify-content-center">
                 <BlueIcon iconClass="fas fa-home fa-2x"/>
-                <div className="services-icon-text">Jail Release</div>
+                <div className="services-icon-text"><Link className="services-icon-text-link" to="/jailrelease"> Jail Release</Link></div>
               </div>
             </div>
   
@@ -57,7 +58,7 @@ const ServicesOffered = (props) => {
             <div className="col-md-3 mb-3">
               <div className="d-flex flex-row justify-content-start">
                 <BlueIcon iconClass="fas fa-home fa-2x"/>
-                <div className="services-icon-text">Jail Release</div>
+                <div className="services-icon-text"><Link className="services-icon-text-link" to="/jailrelease"> Jail Release</Link></div>
               </div>
             </div>
   

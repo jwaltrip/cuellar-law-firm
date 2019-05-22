@@ -9,7 +9,7 @@ class ProfilePage extends Component {
     return (
       <div>
         {/*<TitleBanner color="#06b9dd" title="Attorney Profile" />*/}
-        <ProfileTitle />
+        <ProfileTitle color="#06b9dd" title="Attorney Profile"/>
 
         <div className="container">
           <div className="section-content">

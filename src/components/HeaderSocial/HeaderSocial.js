@@ -18,13 +18,6 @@ class HeaderSocial extends Component {
                 <a className="email" href="mailto:michaeladcuellar@gmail.com" title="email" target="_self"><i className="far fa-envelope"></i></a>
           
               </div>
-              <div className="header-search">
-                <form method="get" action="https://www.michaelacuellar.com/">
-                  <fieldset>
-                    <input type="text" name="s" value="" placeholder="Search..." />
-                  </fieldset>
-                </form>
-              </div>
             </div>
           </div>
         </header>

@@ -216,7 +216,7 @@ class ContactUsPage extends Component {
               <p className="contact-desc">
                 <strong>Address:</strong> &nbsp; 507 W 10th St.  Austin, TX 78701
                 <br/>
-                <strong>Phone:</strong> &nbsp; (512)-765-6341
+                <strong>Phone:</strong> &nbsp; <a href= "tel:(512)-765-6341">(512)-765-6341</a>
                 <br/>
                 <strong>Fax:</strong> &nbsp; (512)-597-0727
                 <br/>

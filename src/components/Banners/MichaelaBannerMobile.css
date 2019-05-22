@@ -84,6 +84,16 @@
   font-weight: 400 !important;
 }
 
+.mobile-tel-link {
+  font-family: "Source Sans Pro", sans-serif !important;
+  font-weight: 400 !important;
+  color: white;
+}
+
+.mobile-tel-link:hover {
+  color: white;
+}
+
 .mobile-text-4 {
   font-family: "Source Sans Pro", sans-serif !important;
   font-weight: 400 !important;

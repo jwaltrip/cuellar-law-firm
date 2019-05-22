@@ -50,7 +50,7 @@
 }
 
 /* img text overlay - line 3 */
-.img-bottom-text {
+.img-bottom-text, .img-bottom-text > a {
   position: absolute;
   left: 100px;
   top: 440px;
