@@ -44,6 +44,9 @@ class Footer extends Component {
                 <h3 className="widget-title footer-title">Pages</h3>
                 <ul>
                   <li className="page_item">
+                    <Link className="page-link" to="/jailrelease">Jail Release</Link>
+                  </li>
+                  <li className="page_item">
                     <Link className="page-link" to="/profile">Attorney Profile</Link>
                   </li>
                   <li className="page_item">
