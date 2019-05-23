@@ -43,7 +43,7 @@ class JailReleasePage extends Component {
               
               <p className="profile-desc2 mb-3">
               Why should you choose an attorney over a bondsman? 
-              We’re affordable, convenient, and will see the case through representation. 
+              We’re affordable, convenient and will see the case through representation. 
               The goal is to make this a hassle-free process. You supply the information; the office will provide all the work. There are no co-signers required, which means you are not liable should the person not fulfill the conditions of his/her bond. Simply pay a one-time fee for the jail release.
 
               </p>

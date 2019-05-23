@@ -13,7 +13,7 @@ class CallBanner extends React.Component {
           <div className="row">
             <div className="col-lg-9">
               <FitText compressor={2.1} minTextSize={25} maxTextSize={34}>
-                <h2 className="schedule-text">Phones Answered 24 hours</h2>
+                <h2 className="schedule-text">Phones answered 24 hours</h2>
               </FitText>
             </div>
             <div className="col-lg-3 pt-2">
