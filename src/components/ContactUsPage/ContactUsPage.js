@@ -207,7 +207,7 @@ class ContactUsPage extends Component {
             <div className="col-md-6">
               <h3 className="contact-header">Get In Touch</h3>
               <p className="contact-desc">
-                Contact my office today at (512)-765-6341 or email me to schedule a
+                Contact my office today at <a href= "tel:(512)-765-6341">(512)-765-6341</a> or email me to schedule a
                 complimentary consultation and take the first step toward receiving the professional
                 representation you deserve. This could be the most important call of your life.
               </p>

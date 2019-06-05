@@ -22,7 +22,7 @@ class Footer extends Component {
                     Criminal, Family and Personal Injury cases.
                   </p>
                   <p>
-                    Schedule a Consultation: (512)-765-6341
+                    Schedule a Consultation: <a href= "tel:(512)-765-6341">(512)-765-6341</a>
                   </p>
                   <br/>
                   
